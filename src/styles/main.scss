@@ -1,0 +1,95 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  width: $lg-size;
+  margin: 0 auto;
+}
+
+.block {
+  height: $block-height;
+  border-radius: 16px;
+  width: $block-width-sm;
+  &--green {
+    background: $light-green;
+  }
+
+  &--small {
+    width: $block-small-width-sm;
+    opacity: 0.8;
+    background: $light-green;
+  }
+}
+
+.input {
+  box-shadow: $default-boxshadow;
+  background-color : #d1d1d1;
+  &__textfield {
+    background: $white;
+    border: 1.5px solid $dark-green;
+    padding: 0 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    height: $textfield-height-sm;
+    width: $textfield-width-sm;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 14px;
+
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    }
+
+    &:-webkit-autofill {
+    }
+
+    &:focus {
+      outline: none;
+      border-width: 3px;
+    }
+
+    &--error {
+      border-color: $error;
+    }
+  }
+
+  &__checkbox {
+    background: $white;
+    border: 1.5px solid $dark-green;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: $dark-green;
+    margin-right: 11px;
+
+    &:focus {
+      outline: none;
+      border-width: 3px;
+    }
+
+    &:checked {
+      accent-color: #35694F;
+    }
+
+    &--error {
+      border-color: $error;
+    }
+  }
+
+  &__label {
+    color: black;
+    font-size: $label-size-sm;
+    font-weight: 700;
+    font-family: "Roboto Light", sans-serif;
+    text-align: start;
+
+    &--small {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+

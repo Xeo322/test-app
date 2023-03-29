@@ -1,0 +1,66 @@
+@import "@/styles/variables.scss";
+
+.login {
+
+  &__nav {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    margin: 200px auto 40px auto;
+    border-radius: 30px;
+    box-shadow: $default-boxshadow;
+    display: flex;
+    justify-content: space-between;
+
+    &--container {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 35px;
+    margin-top: 90px;
+    text-align: start;
+  }
+
+  &__button {
+    width: 200px;
+    height: 40px;
+    background: $green;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: $button-text-size-sm;
+    border: 1px solid $dark-green;
+    color: $white;
+
+    &:hover {
+      background: $dark-green;
+    }
+
+    &:active {
+      background: $button-pressed-color;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
